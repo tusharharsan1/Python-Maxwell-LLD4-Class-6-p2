@@ -1,6 +1,6 @@
 # Reading the Supplier's Answer at ShopNest
 
-> **Where the files are:** the starter files are in the `base/` folder. Every path below (such as `app/services/supplier_service.py` and `try_it.py`) is inside `base/`. Open a terminal in `base/` to run the commands.
+> **Where the files are:** the finished files in the `solution/` folder. Every path below (such as `app/services/supplier_service.py`, `tests/` and `try_it.py`) is inside `solution/`. Open a terminal in `solution/` to run the commands.
 
 ## Problem Statement
 Our catalog asks the supplier (dummyjson) for one product at a time. In class we learned that the supplier's answer is not always a product. `httpx` hands back a `404` as a normal answer (it does **not** raise an error), and the supplier can also answer with an error status, send a web page instead of JSON, or be too slow to answer. Our service must turn every one of these into something the rest of the project can handle: a **product**, `None` (which means "there is no such product"), or our own **`SupplierError`**. Finish two small pieces. Together they need only about 7 lines of code.
